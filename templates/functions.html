@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<div style="padding: 2%;font-size: small;">
+    <h3>Naïve Bayesian learning for classifying news text articles</h3>
+    <p>
+        Naïve Bayes classifiers are one among the most successful known algorithms for learning to
+classify text documents. This project classifies text into its appropriate newsgroup. The dataset contains 20,000 newsgroup messages drawn from the
+20 newsgroups. The dataset contains 1000 documents from each of the 20 newsgroups.
+<br>The 20 news groups: 
+    <div style="padding: 0.5%;">
+        <li> alt.atheism</li>
+        <li> sci.crypt </li>
+        <li> comp.os.ms-windows.misc </li>
+        <li> sci.electronics</li>
+        <li> comp.sys.ibm.pc.hardware </li>
+        <li> sci.med</li>
+        <li> comp.sys.mac.hardware </li>
+        <li> sci.space</li>
+        <li> comp.windows.x </li>
+        <li> soc.religion.christian</li>
+        <li> misc.forsale </li>
+        <li> talk.politics.guns</li>
+        <li> rec.autos </li>
+        <li> talk.politics.mideast</li>
+        <li> rec.motorcycles </li>
+        <li> talk.politics.misc</li>
+        <li> rec.sport.baseball </li>
+        <li> talk.religion.misc</li> 
+    </div>
+    </p>
+
+
+<section class="section" style="text-align: left;"  id="q1">
+	
+        <form action="/index" method="post">
+            <button class="btn btn-lg" type="submit">
+                Build NB-classifier
+            </button>
+        </form>
+        
+</section>
+
+</div>
+
+{% endblock %}

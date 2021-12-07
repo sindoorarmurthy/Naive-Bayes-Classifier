@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.navbar {
+    padding: .1rem;
+    font-family:'Poppins';
+   
+}
+
+.blurImage {
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+
+.carousel-caption {
+    position:absolute;
+    top:25%;
+}
+
+.btn {
+    
+    border: 4px solid;
+}
+
+.fa-envelope {
+    color:darkslategrey;
+}
+
+.fa-linkedin-in {
+    color:rgb(49, 113, 165);
+}
+
+.footer{
+    background-color: teal;
+}
+
+.form-check {
+    text-align: center;
+    font-family:'Poppins';
+
+}
+
+.borderAbout{
+    border-bottom: 1px solid rgb(71, 70, 70) ;
+}
+
+.container-text {
+    font-size: 190%;
+    position: absolute;
+    left:60px;
+    right:60px;
+    top:15%;
+    text-align: center;
+    color: rgb(3, 185, 185);
+    text-shadow: 1px 1px 5px #000; 
+
+}
+
+.container-text h2{
+    position: relative;
+    font-size: 160%;
+    color: rgb(3, 185, 185);
+    text-shadow: 2px 2px 5px rgb(247, 243, 243); 
+
+}
+
+.img-container {
+    position:absolute;
+    top:12%;
+    left:20%;
+    right:20%;
+    bottom:10%;
+    margin:auto;
+  }
+
+.navbar-nav{
+    text-align: center;
+}
+
+

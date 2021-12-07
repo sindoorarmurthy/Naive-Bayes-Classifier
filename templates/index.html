@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<div style="padding: 2%;font-size: small;">
+
+	<h4>
+		Steps in training the model
+	</h4>
+	<p>
+		<li>
+		 For example, let us consider the following text -> <b>“The microprocessor was made by AT&T, the wireless company that also has a big football
+			stadium in Arlington, Texas”</b>
+		</li>
+		<li>
+After data cleaning, the above sentence looks like this : <b>“Microprocessor AT&T wireless company football stadium Arlington Texas”</b>
+		</li>
+		<li> The words of a sentence are given a probability score, and the sentence is
+			classified as a particular group according to the max probability score.
+			<img src="../static/images/prob.png" style="height: 40%; width: 40%;">
+		</li>
+		
+	</p>
+	
+
+
+
+{% if input==1 %}
+<br><br>
+
+<section class="section" style="text-align: left;" id="q1">
+	<form action="/test" method="post">
+		
+		<button class="btn btn-lg" type="submit">
+			Test the Model
+		</button>
+		
+	</form>
+	<p>(Please wait 4-5 minutes for results, do not close!)</p>
+       
+</section>
+
+
+{% elif input==2 %}
+<br><br>
+
+<section class="section" style="text-align: left; font-size: large; color: rgb(11, 11, 144);" id="q1">
+	
+	<p> 
+		Accuracy of the trained NB classifier : <b>{{accuracy}}%</b>
+	</p>
+	<p> 
+		Time lapsed : {{timelapsed}} seconds
+	</p>
+       
+</section>
+
+</div>
+{% endif %}
+
+
+
+{% endblock %}
